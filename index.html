@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div id="player">
+        <!-- Dash Board -->
+        <div class="dashboard">
+            <!-- Header -->
+            <header>
+                <h4>Now playing</h4>
+                <h2>String 57th &9th</h2>
+            </header>
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb"></div>
+            </div>
+            <!-- Control -->
+            <div class="control">
+                <div class="btn-repeat">
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="btn-prev">
+                    <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div class="btn-play-music">
+                    <i class="fas fa-pause icon-play"></i>
+                    <i class="fas fa-play icon-pause"></i>
+                </div>
+                <div class="btn-next">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+                <div class="btn-random">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+            </div>
+            <!-- Progress -->
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+            <!-- Audio -->
+            <audio class="audio" src=""></audio>
+        </div>
+       <!-- Playlist -->
+       <div class="playlist">
+            
+       </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
